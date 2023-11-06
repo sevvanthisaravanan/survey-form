@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <form action="#" method="post" class="survey-form">
+        <h1>Survey Form</h1>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label>How did you hear about us?</label>
+        <select name="how-heard" id="how-heard" required>
+            <option value="">Select an option</option>
+            <option value="friend">Friend</option>
+            <option value="social-media">Social Media</option>
+            <option value="internet-search">Internet Search</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
